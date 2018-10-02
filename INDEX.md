@@ -1,8 +1,8 @@
 # Driving a Continuous Rotation Servo with PCA9685 16-Channel PWM Driver using Raspberry Pi
 
 ## Table of Contents
-1. [Useful Links](#Useful-Links)
-2.[Proof of Purchase](#proof-of-purchase)  
+1. [Useful Links](#Useful-Links)  
+2. [Proof of Purchase](#proof-of-purchase)  
 
 ### Useful Links
 [CENG 320 Page](https://six0four.github.io/ceng317/)  
@@ -15,4 +15,4 @@
 [Week 7](https://six0four.github.io/ceng317/wk07.html)  
 
 ### Proof of Purchase  
-![Image of Parts](https://raw.githubusercontent.com/six0four/StudentSenseHat/master/images/SSHrev05.jpg)
+![Image of Parts](https://github.com/biodunduke/ServoMotorDriver/blob/master/images/purchaseproof.jpeg)
