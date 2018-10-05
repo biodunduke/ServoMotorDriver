@@ -15,4 +15,4 @@
 [Week 7](https://six0four.github.io/ceng317/wk07.html)  
 
 ### Proof of Purchase  
-[Image of Parts](https://github.com/biodunduke/ServoMotorDriver/blob/master/images/purchaseproof.jpeg)  
+![Image of Parts](https://github.com/biodunduke/ServoMotorDriver/blob/master/images/purchaseproof.jpeg)  
