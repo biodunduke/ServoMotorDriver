@@ -16,5 +16,4 @@
 
 ### Proof of Purchase  
 ![Image of Parts](https://github.com/biodunduke/ServoMotorDriver/blob/master/images/purchaseproof.jpeg)  
-![Image of Parts](https://github.com/biodunduke/ServoMotorDriver/images/purchaseproof.jpeg)
-      
+![Image of Parts](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/images/purchaseproof.jpeg)  
