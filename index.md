@@ -20,19 +20,14 @@
 [Week 9](https://six0four.github.io/ceng317/wk09.html)  
 [Week 10](https://six0four.github.io/ceng317/wk10.html)  
 
-### Proof of Purchase  
-![Image of Parts](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/purchaseproof.jpeg)  
-### Soldered the Header 
-![Image of Soldering](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/soldering.jpeg)  
-![Image of Soldering2](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/backsolder.jpeg)  
-![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/solderedheader.jpeg)  
+
 ### I2C To RPi Wiring  
 ![Image of I2C To RPi Wiring](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-rpi-wiring.jpeg)  
 ### Wiring
 
 The I2C Device PCA9685 can drive up to 16 Sevo Motors since it has 16 channels. In the above connection, I only used one continuous rotation servo motor for testing purpose (to show that the RPi can detect the I2C and run the motor using the Python code posted below. The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).  
 Because of the RPi fluctuating voltage levels, it is advised to power the servo motor by a separate +5V source (there is provision for the connection on the I2C). The I2C (PCA9685) itself is powered from the the 3.3V output of the RPi.  
-I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made somme modifications to the sample code provided by [Adafruit]()
+I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made somme modifications to the sample code provided by [Adafruit](https://github.com/adafruit/Adafruit_Python_PCA9685/blob/master/examples/simpletest.py)  
 
 ### Sample Code  
     # Simple demo of of the PCA9685 PWM servo/LED controller library.
@@ -89,3 +84,10 @@ I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Seria
 ### I2C Connected to the RPi  
 ![Image of I2C Connected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-to-rpi.jpeg)  
 ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
+
+### Proof of Purchase  
+![Image of Parts](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/purchaseproof.jpeg)  
+### Soldered the Header 
+![Image of Soldering](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/soldering.jpeg)  
+![Image of Soldering2](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/backsolder.jpeg)  
+![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/solderedheader.jpeg)  
