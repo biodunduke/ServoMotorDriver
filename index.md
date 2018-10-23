@@ -15,6 +15,9 @@
 [Week 5](https://six0four.github.io/ceng317/wk05.html)  
 [Week 6](https://six0four.github.io/ceng317/wk06.html)  
 [Week 7](https://six0four.github.io/ceng317/wk07.html)  
+[Week 8](https://six0four.github.io/ceng317/wk08.html)  
+[Week 9](https://six0four.github.io/ceng317/wk09.html)  
+[Week 10](https://six0four.github.io/ceng317/wk10.html)  
 
 ### Proof of Purchase  
 ![Image of Parts](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/purchaseproof.jpeg)  
