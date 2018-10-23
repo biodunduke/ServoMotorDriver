@@ -30,7 +30,10 @@
 ![Image of I2C To RPi Wiring](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-rpi-wiring.jpeg)  
 ### Wiring
 
-The I2C Device PCA9685 can drive up to 16 Sevo Motors since it has 16 channels. In the above connection, I only used one continuous rotation servo motor for testing purpose (to show that the RPi can detect the I2C and run the motor using the Python code posted below. The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).   
+The I2C Device PCA9685 can drive up to 16 Sevo Motors since it has 16 channels. In the above connection, I only used one continuous rotation servo motor for testing purpose (to show that the RPi can detect the I2C and run the motor using the Python code posted below. The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).  
+Because of the RPi fluctuating voltage levels, it is advised to power the servo motor by a separate +5V source (there is provision for the connection on the I2C). The I2C (PCA9685) itself is powered from the the 3.3V output of the RPi.  
+I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made somme modifications to the sample code provided by [Adafruit]()
+
 ### Sample Code  
     # Simple demo of of the PCA9685 PWM servo/LED controller library.
     # This will move channel 15 from min to max position repeatedly.
