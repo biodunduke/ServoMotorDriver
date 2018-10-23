@@ -28,6 +28,63 @@
 ![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/solderedheader.jpeg)  
 ### I2C To RPi Wiring  
 ![Image of I2C To RPi Wiring](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-rpi-wiring.jpeg)  
+### Wiring
+
+The I2C Device PCA9685 can drive up to 16 Sevo Motors since it has 16 channels. In the above connection, I only used one continuous rotation servo motor for testing purpose (to show that the RPi can detect the I2C and run the motor using the Python code posted below. The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).   
+### Sample Code  
+    # Simple demo of of the PCA9685 PWM servo/LED controller library.
+    # This will move channel 15 from min to max position repeatedly.
+    # Author: Tony DiCola
+    # Edited by Abiodun Ojo
+    # License: Public Domain
+from __future__ import division
+import time
+
+    # Import the PCA9685 module.
+import Adafruit_PCA9685
+
+
+    # Uncomment to enable debug output.
+    #import logging
+    #logging.basicConfig(level=logging.DEBUG)
+
+    # Initialise the PCA9685 using the default address (0x40).
+pwm = Adafruit_PCA9685.PCA9685()
+
+# Alternatively specify a different address and/or bus:
+#pwm = Adafruit_PCA9685.PCA9685(address=0x41, busnum=2)
+
+# Configure min and max servo pulse lengths
+servo_min = 150  # Min pulse length out of 4096
+servo_max = 600  # Max pulse length out of 4096
+
+# Helper function to make setting a servo pulse width simpler.
+def set_servo_pulse(channel, pulse):
+    pulse_length = 1000000    # 1,000,000 us per second
+    pulse_length //= 60       # 60 Hz
+    print('{0}us per period'.format(pulse_length))
+    pulse_length //= 4096     # 12 bits of resolution
+    print('{0}us per bit'.format(pulse_length))
+    pulse *= 1000
+    pulse //= pulse_length
+    pwm.set_pwm(15, 0, pulse)
+
+# Set frequency to 60hz, good for servos.
+pwm.set_pwm_freq(60)
+
+print('Moving servo on channel 15, press Ctrl-C to quit...')
+while True:
+    # Move servo on channel 15 between extremes.
+# pwm.set_pwm(15, 0, servo_min)
+ #   time.sleep(1)
+#    	pwm.set_pwm(15, 0, servo_max)
+#    	time.sleep(1)
+
+	pwm.set_pwm(15, 0, 10) # Rotate
+    	time.sleep(1) #Sleep
+	pwm.set_pwm(15, 0, 0)  #Do not rotate
+	time.sleep(1)
+
 ### I2C Connected to the RPi  
 ![Image of I2C Connected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-to-rpi.jpeg)  
 ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
