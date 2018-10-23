@@ -20,7 +20,7 @@
 [Week 9](https://six0four.github.io/ceng317/wk09.html)  
 [Week 10](https://six0four.github.io/ceng317/wk10.html)  
 
-
+## Week 8
 ### I2C To RPi Wiring  
 ![Image of I2C To RPi Wiring](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-rpi-wiring.jpeg)  
 ### Wiring
@@ -85,9 +85,12 @@ I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Seria
 ![Image of I2C Connected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-to-rpi.jpeg)  
 ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
 
+## Week 7
 ### Soldered the Header 
 ![Image of Soldering](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/soldering.jpeg)  
 ![Image of Soldering2](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/backsolder.jpeg)  
 ![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/solderedheader.jpeg)  
+
+## Week 6
 ### Proof of Purchase  
 ![Image of Parts](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/purchaseproof.jpeg)  
