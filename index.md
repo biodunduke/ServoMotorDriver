@@ -3,8 +3,8 @@
 ## Table of Contents
 1. [Useful Links](#Useful-Links)  
 2. [Proof of Purchase](#proof-of-purchase)  
-3. [Header Soldered](#Soldered-the-Header)  
-4. [I2C Detected](#I2C-Connected-to-the-RPi)
+3. [Header Soldered](#soldered-the-header)  
+4. [I2C Detected](#i2c-connected-to-the-rpi)
 
 ### Useful Links
 [CENG 320 Page](https://six0four.github.io/ceng317/)  
