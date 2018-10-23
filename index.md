@@ -37,11 +37,11 @@ The I2C Device PCA9685 can drive up to 16 Sevo Motors since it has 16 channels. 
     # Author: Tony DiCola
     # Edited by Abiodun Ojo
     # License: Public Domain
-from __future__ import division
-import time
+    from __future__ import division
+    import time
 
     # Import the PCA9685 module.
-import Adafruit_PCA9685
+    import Adafruit_PCA9685
 
 
     # Uncomment to enable debug output.
@@ -49,17 +49,15 @@ import Adafruit_PCA9685
     #logging.basicConfig(level=logging.DEBUG)
 
     # Initialise the PCA9685 using the default address (0x40).
-pwm = Adafruit_PCA9685.PCA9685()
+    pwm = Adafruit_PCA9685.PCA9685()
+    # Alternatively specify a different address and/or bus:
+    #pwm = Adafruit_PCA9685.PCA9685(address=0x41, busnum=2)
+    # Configure min and max servo pulse lengths
+    servo_min = 150  # Min pulse length out of 4096
+    servo_max = 600  # Max pulse length out of 4096
 
-# Alternatively specify a different address and/or bus:
-#pwm = Adafruit_PCA9685.PCA9685(address=0x41, busnum=2)
-
-# Configure min and max servo pulse lengths
-servo_min = 150  # Min pulse length out of 4096
-servo_max = 600  # Max pulse length out of 4096
-
-# Helper function to make setting a servo pulse width simpler.
-def set_servo_pulse(channel, pulse):
+    # Helper function to make setting a servo pulse width simpler.
+    def set_servo_pulse(channel, pulse):
     pulse_length = 1000000    # 1,000,000 us per second
     pulse_length //= 60       # 60 Hz
     print('{0}us per period'.format(pulse_length))
@@ -69,16 +67,16 @@ def set_servo_pulse(channel, pulse):
     pulse //= pulse_length
     pwm.set_pwm(15, 0, pulse)
 
-# Set frequency to 60hz, good for servos.
-pwm.set_pwm_freq(60)
+    # Set frequency to 60hz, good for servos.
+    pwm.set_pwm_freq(60)
 
-print('Moving servo on channel 15, press Ctrl-C to quit...')
-while True:
+    print('Moving servo on channel 15, press Ctrl-C to quit...')
+    while True:
     # Move servo on channel 15 between extremes.
-# pwm.set_pwm(15, 0, servo_min)
- #   time.sleep(1)
-#    	pwm.set_pwm(15, 0, servo_max)
-#    	time.sleep(1)
+    # pwm.set_pwm(15, 0, servo_min)
+    #   time.sleep(1)
+    #    	pwm.set_pwm(15, 0, servo_max)
+    #    	time.sleep(1)
 
 	pwm.set_pwm(15, 0, 10) # Rotate
     	time.sleep(1) #Sleep
