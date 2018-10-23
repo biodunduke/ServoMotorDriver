@@ -85,9 +85,9 @@ I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Seria
 ![Image of I2C Connected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-to-rpi.jpeg)  
 ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
 
-### Proof of Purchase  
-![Image of Parts](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/purchaseproof.jpeg)  
 ### Soldered the Header 
 ![Image of Soldering](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/soldering.jpeg)  
 ![Image of Soldering2](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/backsolder.jpeg)  
 ![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/solderedheader.jpeg)  
+### Proof of Purchase  
+![Image of Parts](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/purchaseproof.jpeg)  
