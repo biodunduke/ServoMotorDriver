@@ -20,9 +20,13 @@
 [Week 9](https://six0four.github.io/ceng317/wk09.html)  
 [Week 10](https://six0four.github.io/ceng317/wk10.html)  
 
-## Week 8
+## Week 8  
+### Changing PCA9685 Address
+For this project, I have been assigned address 0x75. The PCA9685 default address is 0x40. Below are the steps in changing the address
+![Image of PCA9685 Address Modification](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addressbits.jpeg)  
+![Screenshot after address change](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addresschanged.png)  
 ### I2C To RPi Wiring  
-![Image of I2C To RPi Wiring](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-rpi-wiring.jpeg)  
+![Image of PCA9685 To RPi Wiring](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-rpi-wiring.jpeg)  
 ### Wiring
 
 The I2C Device PCA9685 can drive up to 16 Sevo Motors since it has 16 channels. In the above connection, I only used one continuous rotation servo motor for testing purpose (to show that the RPi can detect the I2C and run the motor using the Python code posted below. The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).  
