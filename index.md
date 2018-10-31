@@ -7,6 +7,8 @@
 4. [I2C Wiring](#i2c-to-rpi-wiring)  
 5. [I2C Detected](#i2c-connected-to-the-rpi)  
 6. [Changing the PCA9685 Address](#changing-pca9685-address)
+7. [PCB Design](#pcb-design)  
+8. [Schematic Diagram](#schematic-diagram)  
 
 ### Useful Links
 [CENG 320 Page](https://six0four.github.io/ceng317/)  
