@@ -21,12 +21,18 @@
 [Week 9](https://six0four.github.io/ceng317/wk09.html)  
 [Week 10](https://six0four.github.io/ceng317/wk10.html)  
 
-## Week 9
+## Week 9  
+### Status Update  
+No additional part has been purchased so the project is within budget.  
+The project is on track according to the project timeline.  
 ### PCB Design  
+I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
+After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.   
+#### PCB Design
 ![PCB Design](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png)  
-![PCB Design2](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb2.png) 
+#### Schematic Diagram  
 ![Schematic Diagram for One Servo Motor](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_schem.png)  
-![Schematic Diagram for One Servo Motor2](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_schem2.png)  
+
 ## Week 8  
 ### Changing PCA9685 Address
 For this project, I have been assigned address 0x75. The PCA9685 default address is 0x40. Below are the steps in changing the address.  
