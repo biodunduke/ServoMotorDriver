@@ -11,21 +11,16 @@
 8. [Schematic Diagram](#schematic-diagram)  
 
 ### Useful Links
-[CENG 320 Page](https://six0four.github.io/ceng317/)  
-[Week 1](https://six0four.github.io/ceng317/wk01.html)  
-[Week 2](https://six0four.github.io/ceng317/wk02.html)  
-[Week 3](https://six0four.github.io/ceng317/wk03.html)  
-[Week 4](https://six0four.github.io/ceng317/wk04.html)  
-[Week 5](https://six0four.github.io/ceng317/wk05.html)  
-[Week 6](https://six0four.github.io/ceng317/wk06.html)  
-[Week 7](https://six0four.github.io/ceng317/wk07.html)  
-[Week 8](https://six0four.github.io/ceng317/wk08.html)  
-[Week 9](https://six0four.github.io/ceng317/wk09.html)  
-[Week 10](https://six0four.github.io/ceng317/wk10.html)  
+[CENG 320 Page](https://six0four.github.io/ceng317/)   
+[Week 1](https://six0four.github.io/ceng317/wk01.html) | [Week 2](https://six0four.github.io/ceng317/wk02.html) | [Week 3](https://six0four.github.io/ceng317/wk03.html)
+[Week 4](https://six0four.github.io/ceng317/wk04.html) | [Week 5](https://six0four.github.io/ceng317/wk05.html) | [Week 6](https://six0four.github.io/ceng317/wk06.html)  
+[Week 7](https://six0four.github.io/ceng317/wk07.html) | [Week 8](https://six0four.github.io/ceng317/wk08.html) | [Week 9](https://six0four.github.io/ceng317/wk09.html)  
+[Week 10](https://six0four.github.io/ceng317/wk10.html) | [Week 11](https://six0four.github.io/ceng317/wk11.html) | [Week 12](https://six0four.github.io/ceng317/wk12.html)  
+[Week 13](https://six0four.github.io/ceng317/wk13.html) | [Week 14](https://six0four.github.io/ceng317/wk14.html) | [Week 15](https://six0four.github.io/ceng317/wk15.html)  
 
 ## Week 9  
 ### Status Update  
-Additional parts [Pin Headers](#pin-headers) have been purchased so the project is a little over the budget by $9.29.  
+Additional parts [Pin Headers](#pin-headers) have been purchased so the project is a little over the budget by __$9.29__.  
 The project is on track according to the project timeline.  
 ### PCB Design  
 I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
