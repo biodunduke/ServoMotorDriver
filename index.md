@@ -25,11 +25,18 @@
 
 ## Week 9  
 ### Status Update  
-No additional part has been purchased so the project is within budget.  
+Additional parts [Pin Headers](#pin-headers) have been purchased so the project is a little over the budget by $9.29.  
 The project is on track according to the project timeline.  
 ### PCB Design  
 I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
 After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.   
+### Pin Headers  
+Pin headers are required for connecting the I2C (PCA9685) to the PCB and also to stack the PCB to the Raspberry Pi.  
+The following pin headers were purchased:  
+6Pin Stackable(CONHD-330060) - This will be soldered to the PCB and the PCA9685 will be mounted on it.  
+40pin header (CONPH-100400) - This is breakable to required number of pin headers. I broke out 2 X 6 pins, to solder to the PCA9685 to serve as connection and support for the PCA9685 on the PCB.  
+Extra stackable 2 x 20p (CONPH-402749) - This will be soldered to the PCB to extend the Raspberry Pi3 40 pins out of the PCB.
+![Pin Headers](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/headerpins.jpeg)
 #### PCB Design
 ![PCB Design](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png)  
 #### Schematic Diagram  
