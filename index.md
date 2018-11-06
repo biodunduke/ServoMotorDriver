@@ -21,7 +21,7 @@
 ## Week 9  
 ### Status Update  
 Additional parts [Pin Headers](#pin-headers) have been purchased so the project is a little over the budget by __$9.29__.  
-The project is on track according to the project timeline.  
+The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projectschedule.pdf).  
 ### PCB Design  
 I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
 After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.   
