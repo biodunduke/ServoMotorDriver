@@ -18,10 +18,17 @@
 [Week 10](https://six0four.github.io/ceng317/wk10.html) | [Week 11](https://six0four.github.io/ceng317/wk11.html) | [Week 12](https://six0four.github.io/ceng317/wk12.html)  
 [Week 13](https://six0four.github.io/ceng317/wk13.html) | [Week 14](https://six0four.github.io/ceng317/wk14.html) | [Week 15](https://six0four.github.io/ceng317/wk15.html)  
 
+## Week 10 - Nov. 6, 2018  
+Due today: PCB soldered
+Progress Report: The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projecttimeline.pdf). I made additional expenses to buy [pin and stackable headers at Creatron](https://www.creatroninc.com/product/stackable-header-for-raspberry-pi/) which made the [project's budget](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projectbudget.pdf) to be a little over the budget by __$9.29__ plus time and mileage.  
+So far, I have been able to connect my PCB to the Raspberry Pi and the servootor controlled successfully.  
+<iframe width="896" height="504" src="https://www.youtube.com/embed/oR9lkV447pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Week 9  
 ### Status Update  
 Additional parts [Pin Headers](#pin-headers) have been purchased so the project is a little over the budget by __$9.29__.  
-The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projectschedule.pdf).  
+The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projecttimeline.pdf).  
 ### PCB Design  
 I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
 After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.   
