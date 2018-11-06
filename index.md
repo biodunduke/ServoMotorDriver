@@ -22,7 +22,7 @@
 Due today: PCB soldered
 Progress Report: The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projecttimeline.pdf). I made additional expenses to buy [pin and stackable headers at Creatron](https://www.creatroninc.com/product/stackable-header-for-raspberry-pi/) which made the [project's budget](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projectbudget.pdf) to be a little over the budget by __$9.29__ plus time and mileage.  
 So far, I have been able to connect my PCB to the Raspberry Pi and the servootor controlled successfully.  
-<iframe width="896" height="504" src="https://www.youtube.com/embed/oR9lkV447pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Video](<iframe width="896" height="504" src="https://www.youtube.com/embed/oR9lkV447pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 
 ## Week 9  
