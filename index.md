@@ -9,6 +9,7 @@
 6. [Changing the PCA9685 Address](#changing-pca9685-address)
 7. [PCB Design](#pcb-design)  
 8. [Schematic Diagram](#schematic-diagram)  
+9. [Video of Working Servomotor](#video)
 
 ### Useful Links
 [CENG 320 Page](https://six0four.github.io/ceng317/)   
