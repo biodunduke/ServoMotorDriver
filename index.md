@@ -19,13 +19,16 @@
 [Week 13](https://six0four.github.io/ceng317/wk13.html) | [Week 14](https://six0four.github.io/ceng317/wk14.html) | [Week 15](https://six0four.github.io/ceng317/wk15.html)  
 
 ## Week 10 - Nov. 6, 2018  
-Due today: PCB soldered
-Progress Report: The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projecttimeline.pdf). I made additional expenses to buy [pin and stackable headers at Creatron](https://www.creatroninc.com/product/stackable-header-for-raspberry-pi/) which made the [project's budget](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projectbudget.pdf) to be a little over the budget by __$9.29__ plus time and mileage.  
-So far, I have been able to connect my PCB to the Raspberry Pi and the servootor controlled successfully.  
-Video   
+### Due today:  
+PCB soldered
+### Progress Report:  
+The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projecttimeline.pdf). I made additional expenses to buy [pin and stackable headers at Creatron](https://www.creatroninc.com/product/stackable-header-for-raspberry-pi/) which made the [project's budget](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projectbudget.pdf) to be a little over the budget by __$9.29__ plus time and mileage.  
+So far, I have been able to connect my PCB to the Raspberry Pi and the servomotor controlled successfully.  
+### Video   
+
 <iframe width="896" height="504" src="https://www.youtube.com/embed/oR9lkV447pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
-
+  
 ## Week 9  
 ### Status Update  
 Additional parts [Pin Headers](#pin-headers) have been purchased so the project is a little over the budget by __$9.29__.  
@@ -59,7 +62,7 @@ Below is the screenshot showing the new address.
 
 The I2C Device PCA9685 can drive up to 16 Sevo Motors since it has 16 channels. In the above connection, I only used one continuous rotation servo motor for testing purpose (to show that the RPi can detect the I2C and run the motor using the Python code posted below. The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).  
 Because of the RPi fluctuating voltage levels, it is advised to power the servo motor by a separate +5V source (there is provision for the connection on the I2C). The I2C (PCA9685) itself is powered from the the 3.3V output of the RPi.  
-I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made somme modifications to the sample code provided by [Adafruit](https://github.com/adafruit/Adafruit_Python_PCA9685/blob/master/examples/simpletest.py)  
+I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made some modifications to the sample code provided by [Adafruit](https://github.com/adafruit/Adafruit_Python_PCA9685/blob/master/examples/simpletest.py)  
 
 ### Sample Code  
     # Simple demo of of the PCA9685 PWM servo/LED controller library.
