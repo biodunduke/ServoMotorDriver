@@ -19,6 +19,13 @@
 [Week 10](https://six0four.github.io/ceng317/wk10.html) | [Week 11](https://six0four.github.io/ceng317/wk11.html) | [Week 12](https://six0four.github.io/ceng317/wk12.html)  
 [Week 13](https://six0four.github.io/ceng317/wk13.html) | [Week 14](https://six0four.github.io/ceng317/wk14.html) | [Week 15](https://six0four.github.io/ceng317/wk15.html)  
 
+## Week 11 - Nov. 13, 2018  
+### Due today:  
+Powerup
+### Progress Report:  
+The project is on track according to the [project timeline](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/projecttimeline.pdf), I was able to achieve power up since last [week](#week-10). No additional cost incurred since the last purchase.   
+I demonstrated the power up to the professor in class. Video is posted [here](#video).  
+  
 ## Week 10 - Nov. 6, 2018  
 ### Due today:  
 PCB soldered
