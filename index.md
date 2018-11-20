@@ -22,7 +22,7 @@
 ## Week 12 - Nov. 20, 2018  
 ### Due today:  
 Enclosure  
-The enclosure was designed in Corel Draw which is not free for use. The college however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/Pi3Case ServoMotor.cdr) for modification.
+The enclosure was designed in Corel Draw which is not free for use. The college however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) for modification.
 #### Enclosure
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pi3case.jpg)
 ## Week 11 - Nov. 13, 2018  
