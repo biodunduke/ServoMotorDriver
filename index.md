@@ -9,15 +9,23 @@
 6. [Changing the PCA9685 Address](#changing-pca9685-address)
 7. [PCB Design](#pcb-design)  
 8. [Schematic Diagram](#schematic-diagram)  
-9. [Video of Working Servomotor](#video)
+9. [Video of Working Servomotor](#video)  
+10. [Enclosure](#Assembled-Enclosure)  
+11. [Presentation](#Presentation)  
 
 ### Useful Links
-[CENG 320 Page](https://six0four.github.io/ceng317/)  [GitHubpage](https://biodunduke.github.io/ServoMotorDriver/)   
+[CENG 320 Page](https://six0four.github.io/ceng317/) | [GitHubpage](https://biodunduke.github.io/ServoMotorDriver/)   
 [Week 1](https://six0four.github.io/ceng317/wk01.html) | [Week 2](https://six0four.github.io/ceng317/wk02.html) | [Week 3](https://six0four.github.io/ceng317/wk03.html)  
 [Week 4](https://six0four.github.io/ceng317/wk04.html) | [Week 5](https://six0four.github.io/ceng317/wk05.html) | [Week 6](https://six0four.github.io/ceng317/wk06.html)  
 [Week 7](https://six0four.github.io/ceng317/wk07.html) | [Week 8](https://six0four.github.io/ceng317/wk08.html) | [Week 9](https://six0four.github.io/ceng317/wk09.html)  
 [Week 10](https://six0four.github.io/ceng317/wk10.html) | [Week 11](https://six0four.github.io/ceng317/wk11.html) | [Week 12](https://six0four.github.io/ceng317/wk12.html)  
 [Week 13](https://six0four.github.io/ceng317/wk13.html) | [Week 14](https://six0four.github.io/ceng317/wk14.html) | [Week 15](https://six0four.github.io/ceng317/wk15.html)  
+[Presentation](#Presentation)   
+
+## Week 13 - Nov. 27, 2018  
+### Due today:  
+### Presentation  
+The PowerPoint presentation can be obtained [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/Presentation.pptx)
 
 ## Week 12 - Nov. 20, 2018  
 ### Due today:  
