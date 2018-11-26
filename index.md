@@ -21,11 +21,11 @@
 
 ## Week 12 - Nov. 20, 2018  
 ### Due today:  
-[Enclosure](#Enclosure)  
+[Enclosure](#Enclosure-Design)  
 The enclosure was designed in Corel Draw which is not free for use. The college, however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) for modification.  
 #### Assembled Enclosure:  
-Update: The Humber Prototype lab had closed before the design was finished. I will get it produced tomorrow and upload the picture of it assembled. Check back for update!   
-#### Enclosure
+![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg) 
+#### Enclosure Design
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pi3case.jpg)
 ## Week 11 - Nov. 13, 2018  
 ### Due today:  
