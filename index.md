@@ -32,7 +32,10 @@ The PowerPoint presentation can be obtained [here](https://raw.githubusercontent
 [Enclosure](#Enclosure-Design)  
 The enclosure was designed in Corel Draw which is not free for use. The college, however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) for modification.  
 #### Assembled Enclosure:  
-![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg) 
+![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg)  
+### Video - Enclosure  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U4BKwn-sq-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
 #### Enclosure Design
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pi3case.jpg)
 ## Week 11 - Nov. 13, 2018  
