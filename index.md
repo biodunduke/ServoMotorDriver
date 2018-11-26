@@ -34,7 +34,7 @@ The enclosure was designed in Corel Draw which is not free for use. The college,
 #### Assembled Enclosure:  
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg) 
 #### Enclosure Design
-![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/picase.jpg)
+![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pi3case.jpg)
 ## Week 11 - Nov. 13, 2018  
 ### Due today:  
 Powerup
