@@ -12,7 +12,7 @@
 9. [Video of Working Servomotor](#video)
 
 ### Useful Links
-[CENG 320 Page](https://six0four.github.io/ceng317/)   
+[CENG 320 Page](https://six0four.github.io/ceng317/)  [GitHubpage](https://biodunduke.github.io/ServoMotorDriver/)   
 [Week 1](https://six0four.github.io/ceng317/wk01.html) | [Week 2](https://six0four.github.io/ceng317/wk02.html) | [Week 3](https://six0four.github.io/ceng317/wk03.html)  
 [Week 4](https://six0four.github.io/ceng317/wk04.html) | [Week 5](https://six0four.github.io/ceng317/wk05.html) | [Week 6](https://six0four.github.io/ceng317/wk06.html)  
 [Week 7](https://six0four.github.io/ceng317/wk07.html) | [Week 8](https://six0four.github.io/ceng317/wk08.html) | [Week 9](https://six0four.github.io/ceng317/wk09.html)  
