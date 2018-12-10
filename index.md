@@ -11,7 +11,8 @@
 8. [Schematic Diagram](#schematic-diagram)  
 9. [Video of Working Servomotor](#video)  
 10. [Enclosure](#Assembled-Enclosure)  
-11. [Presentation](#Presentation)  
+11. [Final View](#video-enclosure)
+12. [Presentation](#Presentation)  
 
 ### Useful Links
 [CENG 320 Page](https://six0four.github.io/ceng317/) | [GitHubpage](https://biodunduke.github.io/ServoMotorDriver/)   
@@ -33,7 +34,7 @@ The PowerPoint presentation can be obtained [here](https://raw.githubusercontent
 The enclosure was designed in Corel Draw which is not free for use. The college, however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) for modification.  
 #### Assembled Enclosure:  
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg)  
-### Video - Enclosure  
+### Video Enclosure  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U4BKwn-sq-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 #### Enclosure Design
