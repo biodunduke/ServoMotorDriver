@@ -128,12 +128,10 @@ There are six address bits (labeled A0 to A5, A0 being the least significant bit
 0x75 in Binary is 0111 0101. To achieve this, I put solder on A0, A2, A4, and A5.  
 Below is the screenshot showing the new address.  
 ![Screenshot after address change](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addresschanged.png)  
-  
-<iframe width="896" height="504" src="https://www.youtube.com/embed/oR9lkV447pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 
 ### PCB / Soldering  
-I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
+So far, the setup has been done on a breadboard which is not great when moving around. There is need to make a PCB so that the PCA9685 can be mounted onto the RPi without wires. I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
 After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.  
 ![PCB Design](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png)  
 
