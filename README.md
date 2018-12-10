@@ -135,6 +135,8 @@ So far, the setup has been done on a breadboard which is not great when moving a
 After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.  
 ![PCB Design](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png)  
 
+View the video [here](https://biodunduke.github.io/ServoMotorDriver/#video)  
+
 ### Power Up  
 
 
