@@ -42,11 +42,18 @@ The PCA9685 comes with the control headers and 4 3X4 pin male headers. Solder th
 ![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pca9685soldered.jpg)   
 
 ##### Get your RPi ready  
-On your Raspberry Pi, open a terminal and enter the following:
+On your Raspberry Pi, open a terminal and enter the following:  
     sudo apt-get install python-smbus  
     sudo apt-get install i2c-tools  
-    sudo i2cdetect -y 1  
-    ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)
+    sudo i2cdetect -y 1  //To detect the address of the PCA9685 (default address is 0x40)
+    ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
+To change the address, follow the instruction below:  
+    Below are the steps in changing the address.  
+![Image of PCA9685 Address Modification](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addressbits.jpeg) 
+There are six address bits (labeled A0 to A5, A0 being the least significant bit (LSB)) on the board that are turned off by default. The addressing starts at 0x40 (Hexadecimal) which in Binary is 0100 0000. To get 0x75 as the address, the address bits will have to be turned on by soldering a piece of solder to bridge the plates, hence turning on the bits.  
+0x75 in Binary is 0111 0101. To achieve this, I put solder on A0, A2, A4, and A5.  
+Below is the screenshot showing the new address.  
+![Screenshot after address change](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addresschanged.png)  
 
 ### PCB / Soldering  
 
