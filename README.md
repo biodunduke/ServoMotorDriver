@@ -48,15 +48,16 @@ On your Raspberry Pi, open a terminal and enter the following:
     sudo i2cdetect -y 1  //To detect the address of the PCA9685 (default address is 0x40)
     ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
 To change the address, follow the instruction below:  
-    Below are the steps in changing the address.  
-![Image of PCA9685 Address Modification](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addressbits.jpeg) 
-There are six address bits (labeled A0 to A5, A0 being the least significant bit (LSB)) on the board that are turned off by default. The addressing starts at 0x40 (Hexadecimal) which in Binary is 0100 0000. To get 0x75 as the address, the address bits will have to be turned on by soldering a piece of solder to bridge the plates, hence turning on the bits.  
+Below are the steps in changing the address.  
+There are six address bits (labeled A0 to A5, A0 being the least significant bit (LSB)) on the board that are turned off by default. The addressing starts at 0x40 (Hexadecimal) which in Binary is 0100 0000. To get 0x75 (which is my address for this project) as the address, the address bits will have to be turned on by soldering a piece of solder to bridge the plates, hence turning on the bits.  
 0x75 in Binary is 0111 0101. To achieve this, I put solder on A0, A2, A4, and A5.  
 Below is the screenshot showing the new address.  
 ![Screenshot after address change](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addresschanged.png)  
 
 ### PCB / Soldering  
-
+I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
+After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.  
+![PCB Design](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png)  
 
 ### Power Up  
 
