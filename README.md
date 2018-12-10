@@ -13,7 +13,8 @@
 
 
 ### Introduction  
-For moving objects, it is imperative that they have parts that aid in the movement. Motors are mostly used in the movement of objects. This project focuses on powering a servo motor using Raspberry Pi.
+For moving objects, it is imperative that they have parts that aid in the movement. Motors are mostly used in the movement of objects. This project focuses on powering a servo motor using Raspberry Pi.  
+
 #### Limitation:   
 The Raspberry Pi only has one PWM (Pulse Width Modulation) channel on its GPIO. To overcome this limitation, I used the Adafruit's 16-channel 12-bit PWM/Servo driver (PCA9685). The PCA9685 connects to the Raspberry Pi with two pins on the Pi's I2C channel. It can drive up to 16 PWM simultaneously with adding extra overhead processing to the Pi. One can chain up to 62 PCA9685 together to drive a total of 992 servo motors, very cool!   
 
@@ -57,7 +58,9 @@ On your Raspberry Pi, open a terminal and enter the following:
     
 ##### Connecting to the Raspberry Pi  
 The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).  
+
 Because of the RPi fluctuating voltage levels, it is advised to power the servo motor by a separate +5V source (there is provision for the connection on the I2C). The I2C (PCA9685) itself is powered from the the 3.3V output of the RPi.  
+
 I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made some modifications to the sample code provided by [Adafruit](https://github.com/adafruit/Adafruit_Python_PCA9685/blob/master/examples/simpletest.py)  
 
 ### Sample Code  
@@ -123,7 +126,6 @@ After connecting do below to detect the PCA9685
 ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
 
 To change the address, follow the instruction below:  
-Below are the steps in changing the address.  
 There are six address bits (labeled A0 to A5, A0 being the least significant bit (LSB)) on the board that are turned off by default. The addressing starts at 0x40 (Hexadecimal) which in Binary is 0100 0000. To get 0x75 (which is my address for this project) as the address, the address bits will have to be turned on by soldering a piece of solder to bridge the plates, hence turning on the bits.  
 0x75 in Binary is 0111 0101. To achieve this, I put solder on A0, A2, A4, and A5.  
 Below is the screenshot showing the new address.  
@@ -132,15 +134,26 @@ Below is the screenshot showing the new address.
 
 ### PCB / Soldering  
 So far, the setup has been done on a breadboard which is not great when moving around. There is need to make a PCB so that the PCA9685 can be mounted onto the RPi without wires. I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
+
 After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.  
+
 ![PCB Design](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png)  
 
 View the video [here](https://biodunduke.github.io/ServoMotorDriver/#video)  
 
 ### Power Up  
 
+When all has been connected, ensure that there are no shorts (shorts can damage your I2C and RPi). I made an enclosure to house the RPi and the I2C device (PCA9685).  
+
+The enclosure was designed in Corel Draw which is not free for use. The college, however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) for modification.  
+![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pi3case.jpg)
+
+![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg)  
+
 
 ### Unit Testing  
-
+For this project, I ensured that there was no short from the PCB to the RPi. I also ensured that I modified the necessary part of the sample code provided by Adafruit (channel #, pulse frequency, I2C address) for it to run.  
 
 ### Production Testing  
+To reproduce this project on a large scale production testing must be done thoroughly. It is encouraged that further research is done to ensure that the product is sustainable.
+
