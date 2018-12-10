@@ -13,7 +13,7 @@
 
 
 ### Introduction  
-
+For moving objects, it is imperative that they have parts that aid in the movement. Motors are mostly used in the movement of objects. This project focuses on powering a servo motor using Raspberry Pi.    
 
 ### Bills of Materials  
 
