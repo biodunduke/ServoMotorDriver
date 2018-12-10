@@ -39,7 +39,14 @@ To get ahead and also cope with the course loads of other courses, I ensured tha
 
 ##### Assembly  
 The PCA9685 comes with the control headers and 4 3X4 pin male headers. Solder them neatly as shown below:  
-![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pca9685soldered.jpg)  
+![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pca9685soldered.jpg)   
+
+##### Get your RPi ready  
+On your Raspberry Pi, open a terminal and enter the following:
+    sudo apt-get install python-smbus  
+    sudo apt-get install i2c-tools  
+    sudo i2cdetect -y 1  
+    ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)
 
 ### PCB / Soldering  
 
