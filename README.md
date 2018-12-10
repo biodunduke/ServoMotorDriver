@@ -44,6 +44,7 @@ The PCA9685 comes with the control headers and 4 3X4 pin male headers. Solder th
 ##### Get your RPi ready  
 On your Raspberry Pi, open a terminal and enter the following:  
 
+    sudo apt-get update  
     sudo apt-get install python-smbus  
     sudo apt-get install i2c-tools   
     sudo apt-get install git build-essential python-dev   
@@ -51,7 +52,7 @@ On your Raspberry Pi, open a terminal and enter the following:
     git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git  
     cd Adafruit_Python_PCA9685  
     sudo python setup.py install  
-# if you have python3 installed:
+##### if you have python3 installed:
     sudo python3 setup.py install 
     
 ##### Connecting to the Raspberry Pi  
@@ -112,8 +113,9 @@ I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Seria
 	pwm.set_pwm(15, 0, 0)  #Do not rotate
 	time.sleep(1)
 
-##### I2C Connected to the RPi  
+##### Connected to the RPi  
 ![Image of I2C Connected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-to-rpi.jpeg)  
+
 After connecting do below to detect the PCA9685  
 
     sudo i2cdetect -y 1  //To detect the address of the PCA9685 (default address is 0x40)
@@ -126,6 +128,9 @@ There are six address bits (labeled A0 to A5, A0 being the least significant bit
 0x75 in Binary is 0111 0101. To achieve this, I put solder on A0, A2, A4, and A5.  
 Below is the screenshot showing the new address.  
 ![Screenshot after address change](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addresschanged.png)  
+  
+<iframe width="896" height="504" src="https://www.youtube.com/embed/oR9lkV447pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
 
 ### PCB / Soldering  
 I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
