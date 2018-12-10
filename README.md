@@ -18,10 +18,11 @@ For moving objects, it is imperative that they have parts that aid in the moveme
 The Raspberry Pi only has one PWM (Pulse Width Modulation) channel on its GPIO. To overcome this limitation, I used the Adafruit's 16-channel 12-bit PWM/Servo driver (PCA9685). The PCA9685 connects to the Raspberry Pi with two pins on the Pi's I2C channel. It can drive up to 16 PWM simultaneously with adding extra overhead processing to the Pi.     
 
 ### Bills of Materials  
-The materials used for the project is as shown below:  ![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/budget.PNG):  
+The materials withtheir costs used for the project is as shown below:  ![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/budget.PNG):  
 
 ### Time Commitment  
-
+The project was done over the course of the semester (15 weeks) but can be reproduced with a week if all the parts listed above have been purchased. Below is my timeline:  
+![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/timeline.jpg)
 
 ### Mechanical Assembly  
 
