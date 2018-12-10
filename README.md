@@ -46,6 +46,13 @@ On your Raspberry Pi, open a terminal and enter the following:
 
     sudo apt-get install python-smbus  
     sudo apt-get install i2c-tools   
+    sudo apt-get install git build-essential python-dev   
+    cd ~  
+    git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git  
+    cd Adafruit_Python_PCA9685  
+    sudo python setup.py install  
+# if you have python3 installed:
+    sudo python3 setup.py install 
     
 ##### Connecting to the Raspberry Pi  
 The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).  
