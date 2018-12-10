@@ -28,6 +28,7 @@ To get ahead and also cope with the course loads of other courses, I ensured tha
 ### Mechanical Assembly  
 #### PCA9685 Pinouts  
 ![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pinouts.jpg)  
+
 ##### Power Pins   
 **GND** - This is the power and signal ground pin, must be connected.  
 **VCC** - This is the logic power pin, connect this to the logic level you want to use for the PCA9685 output, should be 3 - 5V max! It's also used for the 10K pullups on SCL/SDA so unless you have your own pullups, have it match the microcontroller's logic level too!  
@@ -35,6 +36,10 @@ To get ahead and also cope with the course loads of other courses, I ensured tha
 ##### Control Pins  
 **SCL** - I2C clock pin, connect to your microcontrollers I2C clock line. Can use 3V or 5V logic, and has a weak pullup to VCC  
 **SDA** - I2C data pin, connect to your microcontrollers I2C data line. Can use 3V or 5V logic, and has a weak pullup to VCC  
+
+##### Assembly  
+The PCA9685 comes with the control headers and 4 3X4 pin male headers. Solder them neatly as shown below:  
+![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pca9685soldered.jpg)  
 
 ### PCB / Soldering  
 
