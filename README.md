@@ -150,6 +150,8 @@ The enclosure was designed in Corel Draw which is not free for use. The college,
 
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg)  
 
+View the video of the final view [here](https://biodunduke.github.io/ServoMotorDriver/#video-enclosure)  
+
 
 ### Unit Testing  
 For this project, I ensured that there was no short from the PCB to the RPi. I also ensured that I modified the necessary part of the sample code provided by Adafruit (channel #, pulse frequency, I2C address) for it to run.  
