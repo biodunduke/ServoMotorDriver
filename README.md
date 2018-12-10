@@ -45,6 +45,67 @@ The PCA9685 comes with the control headers and 4 3X4 pin male headers. Solder th
 On your Raspberry Pi, open a terminal and enter the following:  
     sudo apt-get install python-smbus  
     sudo apt-get install i2c-tools  
+##### Connecting to the Raspberry Pi  
+The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).  
+Because of the RPi fluctuating voltage levels, it is advised to power the servo motor by a separate +5V source (there is provision for the connection on the I2C). The I2C (PCA9685) itself is powered from the the 3.3V output of the RPi.  
+I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made some modifications to the sample code provided by [Adafruit](https://github.com/adafruit/Adafruit_Python_PCA9685/blob/master/examples/simpletest.py)  
+
+### Sample Code  
+    # Simple demo of of the PCA9685 PWM servo/LED controller library.
+    # This will move channel 15 from min to max position repeatedly.
+    # Author: Tony DiCola
+    # Edited by Abiodun Ojo
+    # License: Public Domain
+    from __future__ import division
+    import time
+
+    # Import the PCA9685 module.
+    import Adafruit_PCA9685
+
+
+    # Uncomment to enable debug output.
+    #import logging
+    #logging.basicConfig(level=logging.DEBUG)
+
+    # Initialise the PCA9685 using the default address (0x40).
+    pwm = Adafruit_PCA9685.PCA9685()
+    #pwm = Adafruit_PCA9685.PCA9685(address=0x75) was what I used eventually after I changed my address
+    # Alternatively specify a different address and/or bus:
+    #pwm = Adafruit_PCA9685.PCA9685(address=0x41, busnum=2)
+    # Configure min and max servo pulse lengths
+    servo_min = 150  # Min pulse length out of 4096
+    servo_max = 600  # Max pulse length out of 4096
+
+    # Helper function to make setting a servo pulse width simpler.
+    def set_servo_pulse(channel, pulse):
+    pulse_length = 1000000    # 1,000,000 us per second
+    pulse_length //= 60       # 60 Hz
+    print('{0}us per period'.format(pulse_length))
+    pulse_length //= 4096     # 12 bits of resolution
+    print('{0}us per bit'.format(pulse_length))
+    pulse *= 1000
+    pulse //= pulse_length
+    pwm.set_pwm(15, 0, pulse)
+
+    # Set frequency to 60hz, good for servos.
+    pwm.set_pwm_freq(60)
+
+    print('Moving servo on channel 15, press Ctrl-C to quit...')
+    while True:
+    # Move servo on channel 15 between extremes.
+    # pwm.set_pwm(15, 0, servo_min)
+    #   time.sleep(1)
+    #    	pwm.set_pwm(15, 0, servo_max)
+    #    	time.sleep(1)
+
+	pwm.set_pwm(15, 0, 10) # Rotate
+    	time.sleep(1) #Sleep
+	pwm.set_pwm(15, 0, 0)  #Do not rotate
+	time.sleep(1)
+
+##### I2C Connected to the RPi  
+![Image of I2C Connected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2c-to-rpi.jpeg)  
+After connecting do below to detect the PCA9685  
     sudo i2cdetect -y 1  //To detect the address of the PCA9685 (default address is 0x40)
     ![Screenshot of I2C Detected](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/i2cdetected.PNG)  
 To change the address, follow the instruction below:  
