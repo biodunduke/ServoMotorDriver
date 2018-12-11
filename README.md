@@ -17,15 +17,14 @@
 For moving objects, it is imperative that they have parts that aid in the movement. Motors are mostly used in the movement of objects. This project focuses on powering a servo motor using Raspberry Pi.  
 
 #### Limitation:   
-The Raspberry Pi only has one PWM (Pulse Width Modulation) channel on its GPIO. To overcome this limitation, I used the Adafruit's 16-channel 12-bit PWM/Servo driver (PCA9685). The PCA9685 connects to the Raspberry Pi with two pins on the Pi's I2C channel. It can drive up to 16 PWM simultaneously with adding extra overhead processing to the Pi. One can chain up to 62 PCA9685 together to drive a total of 992 servo motors, very cool!   
+The Raspberry Pi only has one PWM (Pulse Width Modulation) channel on its GPIO. To overcome this limitation, use the Adafruit's 16-channel 12-bit PWM/Servo driver (PCA9685). The PCA9685 connects to the Raspberry Pi with two pins on the Pi's I2C channel. It can drive up to 16 PWM simultaneously with adding extra overhead processing to the Pi. One can chain up to 62 PCA9685 together to drive a total of 992 servo motors, very cool!   
 
 ### Bills of Materials  
 The materials withtheir costs used for the project is as shown below:  ![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/budget.PNG):  
 
 ### Time Commitment  
 The project was done over the course of the semester (15 weeks) but can be reproduced with a week if all the parts listed above have been purchased. About a day turnaround time should be considered for printing the [PCB](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png) and making the [enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr). Below is my timeline:  
-![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/timeline.jpg)  
-To get ahead and also cope with the course loads of other courses, I ensured that I did most of the task way before due dates.  
+![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/timeline.jpg)    
 
 ### Mechanical Assembly  
 #### PCA9685 Pinouts  
@@ -64,7 +63,7 @@ The RPi pinouts can be found [RPi Pinouts](https://pinout.xyz/pinout/i2c).
 
 Because of the RPi fluctuating voltage levels, it is advised to power the servo motor by a separate +5V source (there is provision for the connection on the I2C). The I2C (PCA9685) itself is powered from the the 3.3V output of the RPi.  
 
-I connected I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) were connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. I connected one servo motor to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). I made some modifications to the sample code provided by [Adafruit](https://github.com/adafruit/Adafruit_Python_PCA9685/blob/master/examples/simpletest.py)  
+Connect I2C's VCC and GND to pins 1 and 6 respectively on the RPi. The Serial Clock (SCL) and Serial Data (SDA) must be connected to pins 5 (BCM 3 - Clock) and 3 (BCM 2 - Data) of the RPi respectively. Connect one servo motor to a channel. The example shown here connects to channel 15 of the PCA9685 (Orange side to the PWM, Red to the V+, and Brown to GND). If you choose to connect to another channel other than specified,  make modifications to the sample code provided by [Adafruit](https://github.com/adafruit/Adafruit_Python_PCA9685/blob/master/examples/simpletest.py)  
 
 ### Sample Code  
     # Simple demo of of the PCA9685 PWM servo/LED controller library.
@@ -136,9 +135,9 @@ Below is the screenshot showing the new address.
 
 
 ### PCB Soldering  
-So far, the setup has been done on a breadboard which is not great when moving around. There is need to make a PCB so that the PCA9685 can be mounted onto the RPi without wires. I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
+So far, the setup should been done on a breadboard which is not great when moving around. There is need to make a PCB so that the PCA9685 can be mounted onto the RPi without wires. I recommend you use the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
 
-After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.  
+After the design, export the fritzing file as an extended grubber file and email it to a production lab in order to manufacture the PCB.  
 
 ![PCB Design](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png)  
 
@@ -146,9 +145,9 @@ View the video [here](https://biodunduke.github.io/ServoMotorDriver/#video)
 
 ### Power Up  
 
-When all has been connected, ensure that there are no shorts (shorts can damage your I2C and RPi). I made an enclosure to house the RPi and the I2C device (PCA9685).  
+Before you connect an dpower up, ensure that there are no shorts (shorts can damage your I2C and RPi). To protect the RPi and the connected PCD, I suggest that you make an enclosure to house the RPi and the I2C device (PCA9685).  
 
-The enclosure was designed in Corel Draw which is not free for use. The college, however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) for modification.  
+The enclosure file provided [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) was designed in Corel Draw which is not free for use. The college, however, have it installed in the lab for student use. Accurate measurement has to be made and the design file modified accordingly to fit the Raspberry and the Broadcom Development platform. The design can be downloaded [here](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr) for modification.  
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pi3case.jpg)
 
 ![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpeg)  
@@ -157,7 +156,7 @@ View the video of the final view [here](https://biodunduke.github.io/ServoMotorD
 
 
 ### Unit Testing  
-For this project, I ensured that there was no short from the PCB to the RPi. I also ensured that I modified the necessary part of the sample code provided by Adafruit (channel #, pulse frequency, I2C address) for it to run.  
+Check that the RPi is securely tightedned to the  base of the ecnclosure. Do not have moving part inside the enclosure, also check the connections to be sure that there are no short from the PCB to the RPi. If you added more servos, make sure you account for them in your code provided by Adafruit (channel #, pulse frequency, I2C address) for them to run.  
 
 ### Production Testing  
 To reproduce this project on a large scale production testing must be done thoroughly. It is encouraged that further research is done to ensure that the product is sustainable.
