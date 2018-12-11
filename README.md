@@ -22,7 +22,7 @@ The Raspberry Pi only has one PWM (Pulse Width Modulation) channel on its GPIO. 
 The materials withtheir costs used for the project is as shown below:  ![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/budget.PNG):  
 
 ### Time Commitment  
-The project was done over the course of the semester (15 weeks) but can be reproduced with a week if all the parts listed above have been purchased. Below is my timeline:  
+The project was done over the course of the semester (15 weeks) but can be reproduced with a week if all the parts listed above have been purchased. About a day turnaround time should be considered for printing the [PCB](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/servomotor_pcb.png) and making the [enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/documentation/pi3case.cdr). Below is my timeline:  
 ![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/timeline.jpg)  
 To get ahead and also cope with the course loads of other courses, I ensured that I did most of the task way before due dates.  
 
@@ -132,7 +132,7 @@ Below is the screenshot showing the new address.
 ![Screenshot after address change](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/addresschanged.png)  
 
 
-### PCB / Soldering  
+### PCB Soldering  
 So far, the setup has been done on a breadboard which is not great when moving around. There is need to make a PCB so that the PCA9685 can be mounted onto the RPi without wires. I used the free software Fritzing to make the Schematic Diagram and the PCB design as shown in the images below.  
 
 After the design, the fritzing file was exported as an extended grubber file and emailed to the Humber Prototype Lab in order to manufacture the PCB.  
