@@ -1,4 +1,5 @@
 # ServoMotorDriver  
+![Enclosure](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/enclosure.jpg)    
 ## Links
 1. [Introduction](#introduction)  
 2. [Bills of Materials](#bills-of-materials)  
@@ -29,6 +30,7 @@ To get ahead and also cope with the course loads of other courses, I ensured tha
 ### Mechanical Assembly  
 #### PCA9685 Pinouts  
 ![](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pinouts.jpg)  
+Picture obtained from [](https://www.adafruit.com/product/815#Slide3)  
 
 ##### Power Pins   
 **GND** - This is the power and signal ground pin, must be connected.  
@@ -41,6 +43,7 @@ To get ahead and also cope with the course loads of other courses, I ensured tha
 ##### Assembly  
 The PCA9685 comes with the control headers and 4 3X4 pin male headers. Solder them neatly as shown below:  
 ![Image of Soldering3](https://raw.githubusercontent.com/biodunduke/ServoMotorDriver/master/images/pca9685soldered.jpg)   
+Picture obtained from [](https://www.adafruit.com/product/815#Slide3)  
 
 ##### Get your RPi ready  
 On your Raspberry Pi, open a terminal and enter the following:  
